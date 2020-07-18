@@ -30,7 +30,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="diu-ZQ-rFe">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="diu-ZQ-rFe">
                                         <rect key="frame" x="20" y="70" width="374" height="80"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nW5-Lz-peq">
@@ -42,7 +42,7 @@
                                                             <constraint firstAttribute="width" constant="80" id="0Qu-b8-LLi"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xc-Xn-TQY">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xc-Xn-TQY">
                                                         <rect key="frame" x="90" y="25" width="229" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <nil key="textColor"/>
@@ -72,6 +72,8 @@
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="diu-ZQ-rFe" secondAttribute="trailing" constant="20" id="hfk-Lf-GoR"/>
+                                    <constraint firstItem="diu-ZQ-rFe" firstAttribute="leading" secondItem="C6H-Xa-N4o" secondAttribute="leading" constant="20" id="jpY-CU-Fyk"/>
                                     <constraint firstAttribute="height" constant="150" id="wa9-iv-NVB"/>
                                 </constraints>
                             </stackView>
